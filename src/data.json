@@ -3,15 +3,38 @@
     "title": "Full Stack Mobile & Web Engineer",
     "header": {
         "intro": [
-            "I'm a London based software engineer focused on creating high quality mobile and web applications that provide a rich user experience.",
-            "Keeping up with the latest technology trends and design practices, I'm able to apply a unique design bearing during development.",
-            "Feel free to have a look at my past projects, skills and get in contact with me if you’re interested in working with me!"
+            "Hi, I'm Hazik and I'm a London based software engineer focused on creating high quality web and mobile applications",
+            "I specialise in frontend and backend web technologies such as React and Node.js, as well as Android (TV and Mobile) development in both Java and Kotlin",
+            "Keeping up with the latest technology trends and design practices, I'm able to apply a unique design bearing during development to ensure that end users are getting the best user experience possible",
+            "Have a look at some of my past work and feel free to drop me a message if you think we could work together! :)"
         ],
         "links": {
-            "linkedin": "https://www.linkedin.com/in/HazAnwar/",
-            "github": "https://github.com/HazAnwar/",
-            "cv": false,
+            "linkedin": "https://www.linkedin.com/in/HazAnwar",
+            "github": "https://github.com/HazAnwar",
+            "twitter": "https://twitter.com/HazAnwar",
+            "stackoverflow": "https://stackoverflow.com/users/9378550/hazanwar",
+            "reddit": "https://www.reddit.com/user/HazAnwar",
             "email": "mailto:HazAnwar@hotmail.com"
         }
+    },
+    "experience": [
+        {
+            "project": "Peacock TV",
+            "link": "https://www.peacocktv.com/",
+            "description": "Full Stack Mobile & Web Engineer"
+        },
+        {
+            "project": "Virgin Money Credit Cards",
+            "link": "https://uk.virginmoney.com/cards/app/",
+            "description": "Full Stack Mobile & Web Engineer"
+        },
+        {
+            "project": "ProposApp",
+            "link": "https://github.com/HazAnwar/ProposApp",
+            "description": "Full Stack Mobile & Web Engineer"
+        }
+    ],
+    "footer": {
+        "message": "Made with 🧡 in London by Hazik Anwar 👨🏽‍💻 © 2018-2020"
     }
 }

@@ -13,11 +13,13 @@ code {
 }
 
 .App {
+  background: black;
+  color: white;
   header {
+    display: flex;
     background: #161415 url(desk.jpg) no-repeat top center;
     background-size: cover;
     height: 100vh;
-    color: white;
     .profile-picture {
       border-radius: 100%;
     }
@@ -25,24 +27,37 @@ code {
       width: fit-content;
     }
     h {
-      &1{
+      &1 {
         font-size: 4rem;
       }
-      &3{
+      &3 {
         font-size: 1.5rem;
+      }
+      &5 {
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 400;
       }
     }
     p {
       font-family: librebaskerville-regular, serif;
-      font-size: larger;
+      font-size: 1.25rem;
       text-align: center;
     }
     svg {
       color: white;
     }
   }
+  main {
+    background: rgba(150, 150, 150, 0.1);
+    color: white;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+  }
   hr {
-    border: solid rgba(150, 150, 150, .1);
+    border: solid rgba(150, 150, 150, 0.1);
     border-width: 0.1rem 0 0 0;
     margin: 0 2rem 1rem 2rem;
   }
@@ -90,5 +105,8 @@ code {
   }
   &-2 {
     padding: 2rem;
+  }
+  &-header {
+    padding: 4rem;
   }
 }
