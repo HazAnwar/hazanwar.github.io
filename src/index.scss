@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  header {
+    background: #161415 url(desk.jpg) no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    .profile-picture {
+      border-radius: 100%;
+    }
+    .width-fit {
+      width: fit-content;
+    }
+    h {
+      &1{
+        font-size: 4rem;
+      }
+      &3{
+        font-size: 1.5rem;
+      }
+    }
+    p {
+      font-family: librebaskerville-regular, serif;
+      font-size: larger;
+      text-align: center;
+    }
+    svg {
+      color: white;
+    }
+  }
+  hr {
+    border: solid rgba(150, 150, 150, .1);
+    border-width: 0.1rem 0 0 0;
+    margin: 0 2rem 1rem 2rem;
+  }
+}
+
+.display {
+  &-flex {
+    display: flex;
+    &.space-around {
+      justify-content: space-around;
+    }
+  }
+}
+
+.m {
+  &-vert {
+    margin: auto 0;
+  }
+  &-hor {
+    margin: 0 auto;
+  }
+  &-auto {
+    margin: auto;
+  }
+  &-0 {
+    margin: 0;
+  }
+  &-1 {
+    margin: 1rem;
+  }
+  &-2 {
+    margin: 2rem;
+  }
+}
+
+.p {
+  &-auto {
+    padding: auto;
+  }
+  &-0 {
+    padding: 0;
+  }
+  &-1 {
+    padding: 1rem;
+  }
+  &-2 {
+    padding: 2rem;
+  }
+}

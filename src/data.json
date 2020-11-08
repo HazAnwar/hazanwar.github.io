@@ -1,0 +1,17 @@
+{
+    "name": "Hazik Anwar",
+    "title": "Full Stack Mobile & Web Engineer",
+    "header": {
+        "intro": [
+            "I'm a London based software engineer focused on creating high quality mobile and web applications that provide a rich user experience.",
+            "Keeping up with the latest technology trends and design practices, I'm able to apply a unique design bearing during development.",
+            "Feel free to have a look at my past projects, skills and get in contact with me if you’re interested in working with me!"
+        ],
+        "links": {
+            "linkedin": "https://www.linkedin.com/in/HazAnwar/",
+            "github": "https://github.com/HazAnwar/",
+            "cv": false,
+            "email": "mailto:HazAnwar@hotmail.com"
+        }
+    }
+}
