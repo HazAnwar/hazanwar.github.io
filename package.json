@@ -19,7 +19,7 @@
     "react-scripts": "4.0.0"
   },
   "scripts": {
-    "predeploy": "build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
