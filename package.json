@@ -2,7 +2,7 @@
   "name": "hazik-anwar-github",
   "author": "Hazik Anwar",
   "version": "1.0.0",
-  "homepage": "./",
+  "homepage": "https://hazanwar.github.io",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
