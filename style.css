@@ -142,6 +142,35 @@ a:hover {
   border-radius: 2px;
 }
 
+/* === Nav Social Icons === */
+.nav-social {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nav-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  transition:
+    border-color var(--t),
+    color var(--t);
+}
+.nav-social-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.nav-social-link svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
 /* === Theme Toggle === */
 .theme-toggle {
   background: none;
@@ -388,7 +417,7 @@ section {
 .edu-school {
   font-size: 0.92rem;
   font-weight: 600;
-  color: var(--text);
+  color: var(--text-muted);
 }
 .edu-degree {
   font-size: 0.85rem;
