@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hazik Anwar — Full Stack Mobile &amp; Web Engineer</title>
+    <meta name="description" content="London-based Full Stack Mobile & Web Engineer specialising in React, Node.js, and Android development." />
+    <meta name="theme-color" content="#00ffe1" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hazik Anwar — Full Stack Engineer" />
+    <meta property="og:description" content="London-based Full Stack Mobile & Web Engineer." />
+    <meta property="og:image" content="https://hazanwar.github.io/assets/profile-pic.jpg" />
+    <meta property="og:url" content="https://hazanwar.github.io/" />
+    <meta property="og:type" content="website" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- ========== NAV ========== -->
+    <nav class="nav">
+      <a href="/" class="nav-brand">HA</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#apps" class="nav-cta">Leap Launcher ↗</a>
+      </div>
+      <button class="nav-hamburger" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <main>
+
+      <!-- ========== HERO ========== -->
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <img src="assets/profile-pic.jpg" alt="Hazik Anwar" class="hero-avatar" />
+          <h1>Hazik Anwar</h1>
+          <p class="hero-title">Full Stack Mobile &amp; Web Engineer</p>
+          <p class="hero-intro">
+            Hi, I'm Hazik — a London based engineer building high quality web and mobile apps.
+            I specialise in React, Node.js, and Android (TV &amp; Mobile) development.
+          </p>
+          <!-- Social links -->
+          <div class="social-links">
+            <a href="https://github.com/HazAnwar" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/HazAnwar" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://twitter.com/HazAnwar" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://stackoverflow.com/users/9378550/hazanwar" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Stack Overflow">
+              <svg viewBox="0 0 24 24"><path d="M15.725 0l-1.72 1.813 5.273 4.24 1.72-1.813L15.725 0zm-8.498 7.763l4.573 3.661 1.292-1.636-4.572-3.66-1.293 1.635zm-2.62 5.03l7.148 1.67.417-1.81-7.148-1.671-.417 1.81zm-.803 5.01h7.31v-1.818h-7.31v1.818zm16.608-5.585l-6.288 1.459.413 1.808 6.288-1.459-.413-1.808zm-1.93 7.403H3.38V24h15.18v-5.379zM5.2 22.182V19.8h10.76v2.382H5.2z"/></svg>
+            </a>
+            <a href="mailto:HazAnwar@hotmail.com" class="social-link" aria-label="Email">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ABOUT ========== -->
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-grid">
+            <div class="about-text">
+              <p>I'm a London-based software engineer focused on creating high quality web and mobile applications. I specialise in frontend and backend web technologies as well as Android (TV and Mobile) development in both Java and Kotlin.</p>
+              <p>Keeping up with the latest technology trends and design practices, I apply a unique design bearing during development to ensure end users get the best possible experience.</p>
+              <p>Have a look at some of my past work and feel free to drop me a message if you think we could work together! 😊</p>
+            </div>
+            <div>
+              <p style="color: var(--text-muted); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem; font-weight: 600;">Technologies</p>
+              <div class="skills-list">
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">Kotlin</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Android TV</span>
+                <span class="skill-tag">GraphQL</span>
+                <span class="skill-tag">REST APIs</span>
+                <span class="skill-tag">SCSS / CSS</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Firebase</span>
+                <span class="skill-tag">CI/CD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== PROJECTS ========== -->
+      <section id="projects">
+        <div class="container">
+          <h2 class="section-title">Experience &amp; Projects</h2>
+          <div class="projects-grid">
+
+            <div class="project-card">
+              <div class="project-card-header">
+                <div class="project-icon-placeholder">🦚</div>
+                <div>
+                  <h3>Peacock TV</h3>
+                  <p class="project-role">Full Stack Mobile &amp; Web Engineer</p>
+                </div>
+              </div>
+              <p>Worked on NBCUniversal's flagship streaming platform, building features for millions of users across web and mobile platforms.</p>
+              <a href="https://www.peacocktv.com/" class="project-link" target="_blank" rel="noopener noreferrer">Visit Peacock ↗</a>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card-header">
+                <div class="project-icon-placeholder">💳</div>
+                <div>
+                  <h3>Virgin Money</h3>
+                  <p class="project-role">Full Stack Mobile &amp; Web Engineer</p>
+                </div>
+              </div>
+              <p>Contributed to the Virgin Money Credit Cards mobile app, delivering a polished banking experience for UK customers.</p>
+              <a href="https://uk.virginmoney.com/cards/app/" class="project-link" target="_blank" rel="noopener noreferrer">Visit Virgin Money ↗</a>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card-header">
+                <div class="project-icon-placeholder">💍</div>
+                <div>
+                  <h3>ProposApp</h3>
+                  <p class="project-role">Full Stack Mobile &amp; Web Engineer</p>
+                </div>
+              </div>
+              <p>Open source full-stack mobile application. Built end-to-end as a personal project exploring real-world app architecture.</p>
+              <a href="https://github.com/HazAnwar/ProposApp" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== APPS (Leap Launcher promo) ========== -->
+      <section class="apps" id="apps">
+        <div class="container">
+          <h2 class="section-title">My Apps</h2>
+          <a href="https://hazanwar.github.io/leap-launcher/" class="app-promo">
+            <img src="https://hazanwar.github.io/leap-launcher/ic_launcher.webp" alt="Leap Launcher icon" class="app-promo-icon" />
+            <div class="app-promo-info">
+              <h3>Leap Launcher</h3>
+              <p>A simple and elegant launcher for Android TV. Available free on the Google Play Store.</p>
+              <span class="btn-outline">View Leap Launcher ↗</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+      <div class="container">
+        <p>Made with ❤️ in London by Hazik Anwar &copy; 2018&ndash;2026</p>
+        <nav aria-label="Footer links">
+          <a href="https://github.com/HazAnwar" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/HazAnwar" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://hazanwar.github.io/leap-launcher/">Leap Launcher</a>
+          <a href="mailto:HazAnwar@hotmail.com">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile nav toggle
+      const menuBtn = document.getElementById('menuBtn');
+      const navLinks = document.getElementById('navLinks');
+      menuBtn.addEventListener('click', () => {
+        const open = navLinks.classList.toggle('open');
+        menuBtn.setAttribute('aria-expanded', open);
+      });
+
+      // Close nav on link click (mobile)
+      navLinks.querySelectorAll('a').forEach((a) => {
+        a.addEventListener('click', () => {
+          navLinks.classList.remove('open');
+          menuBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    </script>
+  </body>
+</html>
