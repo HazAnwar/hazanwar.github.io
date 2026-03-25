@@ -340,6 +340,64 @@ section {
   color: var(--accent);
 }
 
+/* === Achievements === */
+.achievements {
+  background: var(--bg);
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  transition:
+    border-color var(--t),
+    transform var(--t);
+}
+.stat-card:hover {
+  border-color: rgba(var(--accent-rgb), 0.35);
+  transform: translateY(-3px);
+}
+.stat-number {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  text-shadow: 0 0 20px rgba(var(--accent-rgb), 0.3);
+}
+.stat-label {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* === Education === */
+.education-item {
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.edu-degree {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.edu-school {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
 /* === Projects === */
 .projects-grid {
   display: grid;
@@ -507,9 +565,17 @@ footer a:hover {
   .about-grid {
     grid-template-columns: 1fr;
   }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .app-promo {
     flex-direction: column;
     text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 768px) {
