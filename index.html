@@ -9,14 +9,21 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Hazik Anwar — Full Stack Engineer" />
     <meta property="og:description" content="London-based Full Stack Mobile & Web Engineer." />
-    <meta property="og:image" content="https://hazanwar.github.io/assets/profile-pic.jpg" />
+    <meta property="og:image" content="https://hazanwar.github.io/assets/avatar.jpg" />
     <meta property="og:url" content="https://hazanwar.github.io/" />
     <meta property="og:type" content="website" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <script>
+      (function () {
+        var saved = localStorage.getItem('theme');
+        var prefer = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', saved || prefer);
+      })();
+    </script>
   </head>
   <body>
 
@@ -28,6 +35,10 @@
         <a href="#projects">Projects</a>
         <a href="#apps" class="nav-cta">Leap Launcher ↗</a>
       </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle colour theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
       <button class="nav-hamburger" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
@@ -39,7 +50,7 @@
       <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <img src="assets/profile-pic.jpg" alt="Hazik Anwar" class="hero-avatar" />
+          <img src="assets/avatar.jpg" alt="Hazik Anwar" class="hero-avatar" />
           <h1>Hazik Anwar</h1>
           <p class="hero-title">Full Stack Mobile &amp; Web Engineer</p>
           <p class="hero-intro">
@@ -149,7 +160,7 @@
         <div class="container">
           <h2 class="section-title">My Apps</h2>
           <a href="https://hazanwar.github.io/leap-launcher/" class="app-promo">
-            <img src="https://hazanwar.github.io/leap-launcher/ic_launcher.webp" alt="Leap Launcher icon" class="app-promo-icon" />
+            <img src="https://hazanwar.github.io/leap-launcher/assets/logo.webp" alt="Leap Launcher icon" class="app-promo-icon" />
             <div class="app-promo-info">
               <h3>Leap Launcher</h3>
               <p>A simple and elegant launcher for Android TV. Available free on the Google Play Store.</p>
@@ -175,6 +186,13 @@
     </footer>
 
     <script>
+      // Theme toggle
+      document.getElementById('themeToggle').addEventListener('click', () => {
+        const next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+      });
+
       // Mobile nav toggle
       const menuBtn = document.getElementById('menuBtn');
       const navLinks = document.getElementById('navLinks');
