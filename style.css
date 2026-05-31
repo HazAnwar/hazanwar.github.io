@@ -500,9 +500,14 @@ section {
   color: #fff;
 }
 
-/* === Apps section (Leap Launcher promo) === */
+/* === Apps section === */
 .apps {
   background: var(--surface);
+}
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 .app-promo {
   display: flex;
@@ -512,8 +517,6 @@ section {
   border: 1px solid rgba(var(--accent-rgb), 0.18);
   border-radius: var(--radius-lg);
   padding: 2.5rem;
-  max-width: 700px;
-  margin: 0 auto;
   transition:
     border-color var(--t),
     transform var(--t);
@@ -593,6 +596,9 @@ footer a:hover {
   }
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .apps-grid {
+    grid-template-columns: 1fr;
   }
   .app-promo {
     flex-direction: column;
