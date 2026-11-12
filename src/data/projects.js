@@ -7,7 +7,7 @@ export const PROJECTS = [
   {
     name: 'Bloop Brigade',
     icon: `${HAZTECH}/bloop-brigade.png`,
-    url: `${HAZTECH}/bloop-brigade`,
+    url: `${HAZTECH}/bloop-brigade/`,
     kind: 'Game · iPhone, iPad, Mac & Android',
     desc: 'A colourful co-op tower defence game for 1 to 4 players, out now on the App Store and Google Play.',
     points: [
@@ -22,7 +22,7 @@ export const PROJECTS = [
   {
     name: 'Markaz',
     icon: `${HAZTECH}/markaz.png`,
-    url: `${HAZTECH}/markaz`,
+    url: `${HAZTECH}/markaz/`,
     kind: 'App · iOS, Android, macOS, Windows, Linux & web',
     desc: 'An all-in-one companion for Muslims: prayer times, the Quran with audio, a Qibla compass, prayer guides and more.',
     points: [
@@ -37,7 +37,7 @@ export const PROJECTS = [
   {
     name: 'Leap Launcher',
     icon: `${HAZTECH}/leap.png`,
-    url: `${HAZTECH}/leap-launcher`,
+    url: `${HAZTECH}/leap-launcher/`,
     kind: 'App · Android phones, tablets, foldables & TV',
     desc: 'A fast, clean home screen that keeps the stock Android feel and adds the controls people actually want. Used by 1.5K+ people every month.',
     points: [

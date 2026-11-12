@@ -25,6 +25,7 @@ html = html.replace('<div id="root"></div>', `<div id="root">${render()}</div>`)
 const person = {
   '@context': 'https://schema.org',
   '@type': 'Person',
+  '@id': `${SITE}#person`,
   name: PROFILE.name,
   url: SITE,
   image: new URL(PROFILE.avatar.replace(/^\//, ''), SITE).href,
