@@ -44,7 +44,7 @@ export default function Hero() {
   useSpotlight(ref);
 
   return (
-    <header className='hero' id='top' ref={ref}>
+    <header className='hero' ref={ref}>
       <div className='hero-bg' aria-hidden='true'>
         <span className='hero-aurora hero-aurora-1'></span>
         <span className='hero-aurora hero-aurora-2'></span>

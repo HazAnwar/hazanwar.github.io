@@ -46,6 +46,9 @@
           theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
         }
         document.documentElement.setAttribute('data-theme', theme);
+
+        // With no #section in the URL, always open at the top instead of restoring the last scroll position.
+        if (!location.hash && 'scrollRestoration' in history) history.scrollRestoration = 'manual';
       })();
     </script>
   </head>

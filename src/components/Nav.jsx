@@ -21,9 +21,17 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
   const [, toggleTheme] = useTheme();
 
+  // Scroll to the top without putting a hash in the URL, so a refresh also opens at the top.
+  const toTop = (e) => {
+    e.preventDefault();
+    setOpen(false);
+    history.replaceState(null, '', location.pathname + location.search);
+    window.scrollTo({ top: 0 });
+  };
+
   return (
     <nav className='nav'>
-      <a href='#top' className='nav-brand' onClick={() => setOpen(false)}>
+      <a href='/' className='nav-brand' onClick={toTop}>
         {PROFILE.name}
       </a>
       <div className={`nav-links${open ? ' open' : ''}`} id='navLinks'>
