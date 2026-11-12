@@ -32,9 +32,10 @@
   --aurora-2: rgba(59, 130, 246, 0.3);
   --aurora-3: rgba(168, 85, 247, 0.24);
   --spotlight: rgba(var(--accent-rgb), 0.1);
-  /* Page-wide ambient wash: much fainter than the hero aurora */
-  --ambient-1: rgba(0, 255, 225, 0.06);
-  --ambient-2: rgba(168, 85, 247, 0.05);
+  /* Page-wide ambient blobs that drift around behind every section */
+  --ambient-1: rgba(0, 255, 225, 0.14);
+  --ambient-2: rgba(168, 85, 247, 0.13);
+  --ambient-3: rgba(59, 130, 246, 0.13);
 
   --radius: 12px;
   --radius-lg: 20px;
@@ -72,8 +73,9 @@
   --aurora-2: rgba(59, 130, 246, 0.22);
   --aurora-3: rgba(139, 92, 246, 0.18);
   --spotlight: rgba(var(--accent-rgb), 0.09);
-  --ambient-1: rgba(6, 182, 212, 0.07);
-  --ambient-2: rgba(139, 92, 246, 0.05);
+  --ambient-1: rgba(6, 182, 212, 0.14);
+  --ambient-2: rgba(139, 92, 246, 0.11);
+  --ambient-3: rgba(59, 130, 246, 0.11);
 
   color-scheme: light;
 }
@@ -100,29 +102,45 @@ body {
     background var(--t),
     color var(--t);
 }
-/* Ambient wash: two very faint colour fields drifting slowly behind every section */
-body::before {
-  content: '';
+/* Ambient blobs: soft colour bubbles that wander slowly around the whole screen, always on (no hover needed) */
+.ambient {
   position: fixed;
-  inset: -20vmax;
+  inset: 0;
   z-index: -1;
+  overflow: hidden;
   pointer-events: none;
-  background:
-    radial-gradient(40vmax circle at 15% 30%, var(--ambient-1), transparent 70%),
-    radial-gradient(45vmax circle at 85% 75%, var(--ambient-2), transparent 70%);
-  will-change: transform;
-  animation: ambient-drift 45s ease-in-out infinite alternate;
 }
-@keyframes ambient-drift {
-  0% {
-    transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
-  }
-  50% {
-    transform: translate3d(6vw, -4vh, 0) scale(1.08) rotate(8deg);
-  }
-  100% {
-    transform: translate3d(-4vw, 5vh, 0) scale(0.96) rotate(-6deg);
-  }
+.ambient span {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: radial-gradient(closest-side, var(--c), transparent);
+  filter: blur(30px);
+  will-change: transform;
+  animation: var(--path) var(--dur) ease-in-out infinite alternate;
+}
+.ambient-1 { --size: 42vmax; --c: var(--ambient-1); --path: blob-a; --dur: 50s; top: -10vmax; left: -10vmax; }
+.ambient-2 { --size: 36vmax; --c: var(--ambient-2); --path: blob-b; --dur: 62s; top: 30vh; right: -12vmax; animation-delay: -20s; }
+.ambient-3 { --size: 32vmax; --c: var(--ambient-3); --path: blob-c; --dur: 56s; bottom: -12vmax; left: 20vw; animation-delay: -35s; }
+.ambient-4 { --size: 26vmax; --c: var(--ambient-1); --path: blob-b; --dur: 70s; top: 10vh; left: 40vw; animation-delay: -10s; }
+@keyframes blob-a {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  33% { transform: translate3d(40vw, 25vh, 0) scale(1.15); }
+  66% { transform: translate3d(15vw, 55vh, 0) scale(0.9); }
+  100% { transform: translate3d(55vw, 10vh, 0) scale(1.05); }
+}
+@keyframes blob-b {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  33% { transform: translate3d(-35vw, -20vh, 0) scale(0.9); }
+  66% { transform: translate3d(-55vw, 20vh, 0) scale(1.15); }
+  100% { transform: translate3d(-20vw, 35vh, 0) scale(1); }
+}
+@keyframes blob-c {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  33% { transform: translate3d(30vw, -40vh, 0) scale(1.1); }
+  66% { transform: translate3d(-15vw, -60vh, 0) scale(0.92); }
+  100% { transform: translate3d(40vw, -25vh, 0) scale(1.08); }
 }
 img {
   max-width: 100%;

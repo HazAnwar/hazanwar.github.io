@@ -11,6 +11,12 @@ import Footer from './components/Footer';
 export default function App() {
   return (
     <>
+      <div className='ambient' aria-hidden='true'>
+        <span className='ambient-1'></span>
+        <span className='ambient-2'></span>
+        <span className='ambient-3'></span>
+        <span className='ambient-4'></span>
+      </div>
       <Nav />
       <main>
         <Hero />
