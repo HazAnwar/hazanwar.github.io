@@ -15,9 +15,10 @@ export const PROJECTS = [
       'Online co-op through Epic Online Services, with seeded island generation so every player builds the same world, plus local split-screen for up to 4',
       'Adaptive soundtrack synthesised in code, with layers that build with the action',
       'Shipped in 9 languages with achievements on the Epic Games Store, Game Center and Google Play Games, plus leaderboards and cloud saves',
+      'Custom low-level C++ PlayStation 5 rendering and networking port (AGC GPU driver, shader toolchain and PSN integration)',
       'Trailer, store screenshots and short-form videos are all rendered from the game by an automated pipeline',
     ],
-    stack: ['Godot 4', 'GDScript', 'Epic Online Services', 'Python'],
+    stack: ['Godot 4', 'C++', 'GDScript', 'Custom Shaders', 'Epic Online Services', 'Python'],
   },
   {
     name: 'Markaz',
@@ -29,10 +30,10 @@ export const PROJECTS = [
       'One Flutter codebase live on six platforms and their stores',
       'Native extensions in Swift and Kotlin: widgets, Live Activities, Apple Watch, Wear OS, CarPlay and Android Auto',
       'Prayer times calculated offline on the device with astronomical formulas and 20+ calculation methods',
-      'Firebase backend with TypeScript Cloud Functions and Firestore, and subscriptions through RevenueCat',
+      'GCP and Firebase backend with TypeScript Cloud Functions and Firestore, and subscriptions through RevenueCat',
       'GitHub Actions CI/CD builds every platform and publishes releases, with store screenshots generated from the real app UI',
     ],
-    stack: ['Flutter', 'Dart', 'Swift', 'Kotlin', 'Firebase', 'TypeScript', 'GitHub Actions'],
+    stack: ['Flutter', 'Dart', 'Swift', 'Kotlin', 'GCP', 'Firebase', 'TypeScript', 'GitHub Actions'],
   },
   {
     name: 'Leap Launcher',
@@ -43,10 +44,10 @@ export const PROJECTS = [
     points: [
       'Separate phone and Android TV apps built on a shared Kotlin core module',
       'Jetpack Compose UI tuned for touch, foldables, tablets and the TV remote',
-      'Baseline Profiles and startup benchmarks for faster cold starts, even on older TVs',
+      'Baseline Profiles, startup benchmarks and Firebase Crashlytics telemetry for fast, stable cold starts, even on older TVs',
       'Context-aware scenes and dock suggestions that learn entirely on the device',
       'Universal search, digital wellbeing, kids profiles and parental controls',
     ],
-    stack: ['Kotlin', 'Jetpack Compose', 'Android TV', 'Gradle'],
+    stack: ['Kotlin', 'Jetpack Compose', 'Android TV', 'Firebase', 'Gradle'],
   },
 ];
